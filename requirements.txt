@@ -1,0 +1,7 @@
+qiskit
+dask[distributed]
+numpy
+sympy
+matplotlib
+plotly
+streamlit
