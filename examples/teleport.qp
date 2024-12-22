@@ -1,0 +1,6 @@
+H(0);                  # Apply a Hadamard gate to qubit 0
+CNOT(0, 1);            # Create entanglement between qubit 0 and qubit 1
+MEASURE(0);            # Measure qubit 0
+MEASURE(1);            # Measure qubit 1
+IF(0) THEN X(2);       # Apply X gate to qubit 2 if measurement result of qubit 0 is 1
+IF(1) THEN Z(2);       # Apply Z gate to qubit 2 if measurement result of qubit 1 is 1

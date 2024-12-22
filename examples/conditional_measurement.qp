@@ -1,0 +1,8 @@
+H(0);                  # Put qubit 0 in superposition
+MEASURE(0);            # Measure qubit 0
+
+IF(0) THEN H(1);       # Apply Hadamard gate to qubit 1 if qubit 0 is measured as 0
+IF(1) THEN CNOT(1, 2); # Apply CNOT between qubit 1 and 2 if qubit 0 is measured as 1
+
+MEASURE(1);            # Measure qubit 1
+MEASURE(2);            # Measure qubit 2
